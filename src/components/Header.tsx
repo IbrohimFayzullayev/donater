@@ -1,5 +1,45 @@
+import { Link } from "react-router-dom"
+
 const Header = () => {
-  return <div className="flex flex-col items-center justify-center text-gray-700 font-sans text-lg fixed h-16 bg-white top-0 left-0 w-full">Header</div>
+  return (
+    <div
+      className='fixed left-0 top-0 py-3 w-full  bg-gray-600'
+    >
+      <div className="flex items-center justify-between text-lg text-gray-700 font-sans w-10/12 my-0 mx-auto">
+        <Link to='/'>
+          <img src="https://maimoon.uz/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Flogo.c28560d0.png&w=256&q=75" alt="logo" />
+        </Link>
+        <div className='flex items-center justify-center'>
+          <ol className="
+            flex items-center justify-center
+            space-x-4
+            list-none
+            text-white
+            font-bold
+          ">
+            <li className="ml-4">
+              <Link
+                to='/'
+                className='focus:shadow-outline rounded px-4 py-2 font-bold
+                text-white transition duration-300 hover:bg-gray-700 focus:outline-none'
+              >
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                to='/user'
+                className='focus:shadow-outline rounded  px-4 py-2 font-bold
+                text-white transition duration-300 hover:bg-gray-700 focus:outline-none'
+              >
+                User
+              </Link>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  )
 }
 
 export default Header
