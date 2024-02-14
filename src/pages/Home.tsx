@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet'
 import Hero from '../components/Hero'
+import PaymentForm from '../components/PaymentForm'
 
 const Home = () => {
   return (
@@ -8,6 +9,7 @@ const Home = () => {
         <title>Home page</title>
       </Helmet>
       <Hero />
+      <PaymentForm />
     </>
   )
 }

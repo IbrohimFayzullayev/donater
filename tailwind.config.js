@@ -15,5 +15,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: ["prettier-plugin-tailwindcss","prettier-plugin-tailwind","prettier-plugin-classnames"],
+  "customAttributes": ["myClassProp"],
+  "customFunctions": ["clsx"]
 }
