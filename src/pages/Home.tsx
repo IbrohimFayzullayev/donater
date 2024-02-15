@@ -11,7 +11,7 @@ const Home = () => {
       </Helmet>
       <div
         className='bg-no-repeat bg-center h-full w-full fixed z-[-1] top-0 left-0 bg-cover backdrop-blur-xl'
-        style={{ backgroundImage: `url(${Banner})` }}
+        style={{ backgroundImage: `url(${Banner})`, filter: 'blur(3px)' }}
       ></div>
       <Hero />
       <PaymentForm />
