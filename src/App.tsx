@@ -6,7 +6,7 @@ import Footer from './components/Footer'
 
 function App() {
   return (
-    <div className='bg-gray-100'>
+    <>
       <Router>
         <Header />
         <Routes>
@@ -15,7 +15,7 @@ function App() {
         </Routes>
         <Footer />
       </Router>
-    </div>
+    </>
   )
 }
 

@@ -43,8 +43,8 @@ const PaymentForm = () => {
   }
 
   return (
-    <div className='border-t-[1px] border-gray-300 pb-20'>
-      <div className='w-3/6 my-0 mx-auto mt-10'>
+    <div className='my-16'>
+      <div className='w-3/6 my-0 mx-auto py-10 px-6 bg-gray-100 rounded-lg bg-opacity-60 backdrop-blur-sm'>
         <h1 className='text-lg font-bold'>Ведите ваше имя и сумму доната</h1>
         <form className='mt-5' onSubmit={handleSubmit}>
           <div className='w-full border-2 mb-3 border-gray-300 rounded-lg p-3 relative bg-white focus-within:border-gray-600'>
@@ -94,7 +94,7 @@ const PaymentForm = () => {
             rows={3}
             placeholder='Комментарий к донату'
           ></textarea>
-          <div className='flex items-center gap-3'>
+          <div className='flex items-center gap-3 justify-end'>
             <div
               onClick={() => setActivePaymentType('humouzcard')}
               className={`rounded-md bg-white border-2 flex items-center relative justify-around gap-1 cursor-pointer h-16 w-36 ${activePaymentType === 'humouzcard' ? 'border-yellow-600' : 'border-gray-300'}`}
@@ -132,13 +132,15 @@ const PaymentForm = () => {
               ></div>
             </div>
           </div>
-          <button
-            type='submit'
-            className='px-4 bg-yellow-600 text-white rounded-lg py-3 mt-5 disabled:opacity-50'
-            disabled={loading}
-          >
-            {loading ? 'Loading...' : 'Donate'}
-          </button>
+          <div className='flex justify-end w-full'>
+            <button
+              type='submit'
+              className='px-4 bg-yellow-600 text-white rounded-lg py-3 mt-5 disabled:opacity-50 '
+              disabled={loading}
+            >
+              {loading ? 'Loading...' : 'Donate'}
+            </button>
+          </div>
         </form>
       </div>
     </div>
