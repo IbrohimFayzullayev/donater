@@ -1,4 +1,4 @@
-import { Helmet } from "react-helmet";
+import { Helmet } from 'react-helmet'
 
 const User = () => {
   return (
@@ -8,7 +8,7 @@ const User = () => {
       </Helmet>
       <h2>User</h2>
     </>
-  );
-};
+  )
+}
 
-export default User;
+export default User
